@@ -1,0 +1,15 @@
+utility_agents:
+  - agent_class: SearchAgent
+    agent_name: "Garden Scout"
+    agent_description:
+      The Garden Scout can search the Web for relevant gardening information
+      such as how often plants should be watered, the best watering methods, and
+      how deep and far apart should seeds be planted
+    config:
+      output_style: "conversational"
+      contexts:
+        - "chat_history"
+
+orchestrator:
+  agent_list:
+    - agent_name: "Garden Scout"
